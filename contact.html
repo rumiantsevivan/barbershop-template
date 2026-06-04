@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Contact &amp; Booking</title>
+<meta name="description" content="Book an appointment, find our address, hours and phone number." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="contact">
+<div id="header"></div>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="sec-head center" id="contactHead"></div>
+    <div class="info-grid">
+      <!-- FORM -->
+      <div>
+        <form class="form" id="bookForm" novalidate>
+          <div class="prefill-note" id="prefillNote" style="display:none"></div>
+          <div class="row">
+            <div class="field"><label>Name *</label><input type="text" name="name" placeholder="Your name" required></div>
+            <div class="field"><label>Phone *</label><input type="tel" name="phone" placeholder="(___) ___-____" required></div>
+          </div>
+          <div class="field"><label>Email</label><input type="email" name="email" placeholder="you@email.com"></div>
+          <div class="row">
+            <div class="field"><label>Service</label><select name="service" id="svcSelect"></select></div>
+            <div class="field"><label>Barber</label><select name="master" id="masterSelect"></select></div>
+          </div>
+          <div class="row">
+            <div class="field"><label>Preferred date</label><select name="date" id="dateSelect"></select></div>
+            <div class="field"><label>Preferred time</label><select name="time" id="timeSelect"></select></div>
+          </div>
+          <div class="field"><label>Message</label><textarea name="message" placeholder="Tell us what you're looking for…"></textarea></div>
+          <button class="btn btn--primary btn--block btn--lg" type="submit">Request appointment</button>
+          <p class="form__note">We'll confirm by phone or email — usually the same day.</p>
+        </form>
+        <div class="form form-success" id="formSuccess">
+          <div class="form-success__check"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#16a34a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></div>
+          <h3>Request sent!</h3>
+          <p>Thank you — we've received your request and will be in touch shortly to confirm.</p>
+        </div>
+      </div>
+      <!-- INFO + MAP -->
+      <div id="contactInfo"></div>
+    </div>
+  </div>
+</section>
+
+<div id="footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

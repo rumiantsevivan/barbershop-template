@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Gallery</title>
+<meta name="description" content="A gallery of our recent work — cuts, color, lashes, nails and more." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="gallery">
+<div id="header"></div>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="sec-head center"><span class="eyebrow">Our work</span><h2>Gallery</h2>
+      <p>Real results from our chairs. Tap any photo to view it larger.</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox__close" aria-label="Close">&times;</button>
+  <button class="lightbox__nav prev" aria-label="Previous">&#8249;</button>
+  <img src="" alt="" />
+  <button class="lightbox__nav next" aria-label="Next">&#8250;</button>
+</div>
+
+<section class="section cta-band">
+  <div class="wrap">
+    <h2>Like what you see?</h2>
+    <p>Let's create your next look together.</p>
+    <a class="btn btn--light btn--lg" href="contact.html">Book an appointment</a>
+  </div>
+</section>
+
+<div id="footer"></div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
