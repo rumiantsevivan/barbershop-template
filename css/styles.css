@@ -320,8 +320,17 @@ h3{font-size:1.5rem}
 @media(max-width:680px){
   body{font-size:16px}
   .section{padding:64px 0}
+  /* compact mobile header: auto height with breathing room, smaller brand,
+     hidden subtitle, smaller CTA — so nothing feels crammed */
+  .nav{height:auto;min-height:58px;padding:11px 0;gap:10px}
+  .brand{gap:2px}
+  .brand__name{font-size:1.08rem;line-height:1.05;letter-spacing:.02em}
+  .brand__type{display:none}
+  .nav__cta{gap:10px}
+  .nav__cta .btn{padding:.6em 1.05em;font-size:.72rem}
   .nav__links,.nav__phone{display:none}
-  .nav__links{position:fixed;top:81px;left:0;right:0;background:var(--bg);flex-direction:column;
+  /* dropdown menu sits directly under the header whatever its height */
+  .nav__links{position:absolute;top:100%;left:0;right:0;background:var(--bg);flex-direction:column;
     gap:0;padding:8px 24px 24px;border-bottom:1px solid var(--line);box-shadow:var(--shadow);
     transform:translateY(-130%);transition:transform .3s var(--ease);display:flex;z-index:55}
   .nav__links.open{transform:none}
